@@ -1,69 +1,72 @@
-body {
-  font-family: Arial, sans-serif;
+/* Base Reset */
+* {
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
   color: #333;
+  background-color: #fff;
 }
 
-header.hero {
-  background: linear-gradient(to right, #0072ff, #00c6ff);
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 40px 20px;
-}
-
-.hero-text {
-  flex: 1;
-  padding: 20px;
-}
-
-.hero-image img {
-  max-width: 300px;
-}
-
-.cta-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #fff;
-  color: #0072ff;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 15px;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.features ul, .promo ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features li::before, .promo li::before {
-  content: '✔';
-  color: green;
-  margin-right: 10px;
-}
-
-blockquote {
-  background: #e0f7fa;
-  border-left: 5px solid #00acc1;
-  margin: 20px 0;
-  padding: 15px 20px;
-}
-
-footer {
-  background: #eaeaea;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #777;
 }
+
+/* Header */
+header {
+  background: linear-gradient(to right, #0a3d62, #3c6382);
+  color: #fff;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Hero */
+.hero {
+  background-color: #f1f2f6;
+  padding: 60px 20px;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #38ada9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  tr
